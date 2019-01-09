@@ -1,0 +1,26 @@
+ZADATAK: 
+	Korišćenjem HTML i Sass tehnologija realizovati HTML stranicu prikazanu na slikama.
+	Implementirati sledeće zahteve:
+
+	1.	Sass kod modularizovati minimalno tako da se korišćene promenljive i mixini pišu u posebnim
+		sass datotekama koje se uključuju u glavni fajl.
+	2.	Sve boje (obavezno), fontove (neobavezno) kao i ostale korisne vrednosti (po sopstvenoj proceni)
+		izdvojiti u sass promenljive.
+	3.	Sva korišćena vendor-prefixed css pravila izdvojiti u mixine.
+	4.	Realizovati sledeće efekte:
+		a.	Kada se mišem pređe preko likova u glavnoj navigaciji, tekst linka treba da bude podvučen (underline).
+		b.	Kada se mišem pređe preko dugmića u drugoj sekciji, postaviti pozadinu na sivu a boju teksta na belu.
+		c.	Kada se mišem pređe preko slika u trećoj sekciji, prikazati dodatni sadržaj sa tekstom i cenom.
+			Primer je dat na slici "hover_primer.png", tekst i cenu upisati proizvoljno.
+	5.	Realizovati responsive verzije stranice kao na priloženim slikama.
+
+BOJE: 
+	Narandzasta: #f75311
+	Tamno plava (header i footer): #374249
+	Boja fonta: #797979
+	Naslovi: #374249
+	Svetlo siva 1 (hover na dugmice): #cfd1d3
+	Svetlo siva 2 (pozadina sekcija): #f3f7f9
+
+WEB FONTOVI: 
+	Roboto

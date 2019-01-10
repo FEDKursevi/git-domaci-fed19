@@ -2,9 +2,8 @@
     margin: 0;
     padding: 0;
     font-family: 'Roboto', sans-serif;
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-     }
+    box-sizing: border-box
+}
 
 
 .container {
@@ -20,15 +19,24 @@
                 list-style-type: none;
                 li {
                     display: inline-block;
-                    padding: 20px;
-                    background-color: #374249;
+                    margin-right: -4px;
+                    padding: 10px;
+                    text-align: center;
                     &.first {
                         background-color: #f75311;
+                        width: 15%;
+                        text-decoration: underline;
                     }
                     a {
                         text-decoration: none;
                         color: white;
                     }
+                    
+                }
+                .second {
+                    display: inline-block;
+                    width: 84%;
+                    background-color: #374249;
                 }
             }
         }
@@ -141,4 +149,11 @@
             resize: none;
         }
     }
+    footer {
+        width: 100%;
+        height: auto;
+        padding: 20px;
+        background-color: #374249;
+    }
+        
 }

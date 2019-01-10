@@ -1,0 +1,55 @@
+@import "../modules/vars";
+@import "../modules/mixins";
+
+nav {
+    height: 50px;
+    width: 100%;
+    background: $bluehf;
+    font-size: 0;
+    @include clear-fix();
+    a {
+        color: #fff;
+    }
+    // LOGO
+    .logo {
+        font-size: 1rem;
+        background: $orange;
+        width: 15%;
+        height: 100%;
+        position: relative;
+        float: left;
+        img {
+            height: 100%;
+            width: auto;
+        }
+        a {
+            font-size: 1rem;
+            position: absolute;
+            text-decoration: underline;
+            @include absolute-center() {
+                left: 90px;
+            };
+          
+        }
+    }
+    // NAVBAR
+    .navbar {
+        font-size: 1rem;
+        height: 100%;
+        width: 85%;
+        float: left;
+        ul {
+            float: left;
+        }
+        li {
+            display: inline-block;
+        }
+        li + li {
+            padding-left: 40px;
+        }
+        a:hover {
+            text-decoration: underline;
+        }  
+    }
+
+}

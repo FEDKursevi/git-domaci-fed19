@@ -1,0 +1,24 @@
+@import "modules/vars";
+@import "modules/mixins";
+@import "partials/header";
+@import "partials/main-section";
+@import "partials/galery";
+@import "partials/pricing";
+
+
+
+body {
+    font-family: $main-font;
+    color: $font-color;
+    @include reset() {
+        li {
+            list-style: none;
+        }
+    };
+
+    section:nth-child(odd) {
+        background:rgba(169, 236, 253, 0.24);
+    }
+}
+
+

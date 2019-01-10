@@ -1,0 +1,39 @@
+@import "../modules/vars";
+@import "../modules/mixins";
+
+.pricing {
+    text-align: center;
+    height: 500px;
+    h1 {
+        color: $bluehf;
+        padding: 10px 0;
+        font-size: 2rem;
+        margin-bottom: 0;
+    }
+    h5 {
+        font-weight: 300;
+    }
+    table {
+        text-align: center;
+        border-collapse: collapse;
+        width: 60%;
+        color: #fff;
+        @include margin-center();
+        td {
+            border: 1px solid $font-color;
+            padding: 10px 30px;
+        }
+        .orange {
+            background-color: $orange;
+        }
+        .gray {
+            background-color: $bluehf;
+        }
+        .bright {
+            color: $headings-color;
+        }
+        .none {
+            border: none;
+        }
+    }
+}

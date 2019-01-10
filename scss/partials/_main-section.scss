@@ -1,0 +1,46 @@
+@import "../modules/vars";
+@import "../modules/mixins";
+
+.main {
+    width: 100%;
+    height: 100%;
+    position: relative;
+        img {
+            width: 100%;
+            height: auto;
+            position: relative;
+        }
+        .text-wrapper {
+            text-align: center;
+            color: #fff;
+            position: absolute;
+            width: 70%;
+            background: rgba(56, 56, 56, 0.445);
+            @include absolute-center() {
+                top: 65%;
+            };
+            h1 {
+                font-size: 3vw;
+                margin: 0;
+                font-weight: 300;
+            }
+            h4 {
+                font-size: 1rem;
+                font-weight: 300;
+                margin: 0;
+            }
+        }
+
+        .buttons {
+            height: 90px;
+            a {
+                float: right;
+                padding: 15px;
+                margin: 18px;
+                @include buttons();
+                &:first-child {
+                    margin-right: 200px;
+                }
+            }
+        }
+}

@@ -1,5 +1,144 @@
-table, th, td {
-    border: 1px solid black;
-    border-collapse: collapse;
-  }
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+     }
 
+
+.container {
+    width: 80%;
+    max-width: 800px;
+    margin: 0 auto;
+    header {
+        width: 100%;
+        height: auto;
+        float: left;
+        nav {
+            ul {
+                list-style-type: none;
+                li {
+                    display: inline-block;
+                    padding: 20px;
+                    background-color: #374249;
+                    &.first {
+                        background-color: #f75311;
+                    }
+                    a {
+                        text-decoration: none;
+                        color: white;
+                    }
+                }
+            }
+        }
+
+    }
+    .main_image {
+        width: 100%;
+        position: relative;
+        img {
+            width: 100%;
+        }
+        .main_title {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+            background: black;
+            opacity: 0.5;
+            h1, h3 {
+                color: white;
+            }
+
+
+        }
+        
+    }
+    .galery {
+        width: 100%;
+        margin-top: 20px;
+        background: #f3f7f9; 
+        .images {
+            width: 60%;
+            margin: 0 auto;
+            padding: 30px;
+            img {
+                width: 100px;
+                height: 133px;
+            } 
+        }
+    }
+    .pricing {
+        width: 100%;
+        margin-top: 20px;
+        text-align: center;
+        h3 {
+            margin-top: 40px;
+            color: #797979;
+        }
+        table {
+            margin: 20px auto;
+            width: 50%;
+            border-collapse: collapse;
+            .orange {
+                background: #f75311;
+                color: #f3f7f9;
+            }
+            .dark_blue {
+                background: #374249;
+                color: #f3f7f9;
+                border: 1px solid darkgray;
+            }
+            
+        } 
+    }
+    .contact_us {
+        width: 100%;
+        text-align: center;
+        background: #f3f7f9;
+        margin-top: 50px;
+        h1 {
+            display: inline-block;
+            margin-top: 30px; 
+        }
+        .contact_form {
+            width: 60%;
+            background: #f75311;
+            border-radius: 6px;
+            display: block;
+            margin: 20px auto;
+            padding: 20px;
+        }
+        .input {
+            border: none;
+            border-radius: 3px;
+            margin: 10px 0;
+            padding: 5px;
+        }
+        .select {
+            width: 20%;
+            height: 40px;
+            display: inline-block;
+
+            
+        }
+        .your_name {
+            width: 79%;
+            height: 40px;
+            display: inline-block;
+            
+            
+        }
+        .your_email {
+            width: 99%;
+            height: 40px;
+            
+        }
+        .textarea {
+            width: 99%;
+            resize: none;
+        }
+    }
+}

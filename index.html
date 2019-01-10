@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
     <title>Document</title>
 </head>
@@ -12,7 +13,7 @@
         <header>
             <nav>
                 <ul>
-                    <li><a href="">New York</a></li>
+                    <li class="first"><i class="location"></i><a href="">New York</a></li>
                     <li><a href="">Rent</a></li>
                     <li><a href="">Buy</a></li>
                     <li><a href="">Sell</a></li>
@@ -22,37 +23,43 @@
         </header>
         <div class="main_image">
             <img src="slike/intro.jpg" alt="intro">
-            <h1>Welcome to HomeExchange</h1>
-            <h3>Your fastest way to find or sell home online.</h3>
+            <div class="main_title">
+                <h1>Welcome to HomeExchange</h1>
+                <h3>Your fastest way to find or sell home online.</h3>
+            </div>
+            
         </div>
         <div class="galery">
-            <img src="slike/1.jpg" alt="slika1">
-            <img src="slike/2.jpg" alt="slika2">
-            <img src="slike/3.jpg" alt="slika3">
-            <img src="slike/4.jpg" alt="slika4">
-            <img src="slike/5.jpg" alt="slika5">
-            <img src="slike/6.jpg" alt="slika6">
+            <div class="images">
+                <img src="slike/1.jpg" alt="slika1">
+                <img src="slike/2.jpg" alt="slika2">
+                <img src="slike/3.jpg" alt="slika3">
+                <img src="slike/4.jpg" alt="slika4">
+                <img src="slike/5.jpg" alt="slika5">
+                <img src="slike/6.jpg" alt="slika6">
+            </div>
         </div>
         <div class="pricing">
             <h2>PRICING</h2>
             <h3>Our services prices in New York</h3>
             <table>
-                <tr><th></th><th></th><th colspan="2">Price</th></tr>
-                <tr><th></th><th></th><th>Rent/Buy</th><th>Sell</th></tr>
-                <tr><td rowspan="3">Location</td><td>Downtown</td><td>3$</td><td>3$</td></tr>
-                <tr><td>Center</td><td>3$</td><td>3$</td></tr></tr>
-                <tr><td>Manhattan</td><td>3$</td><td>3$</td></tr></tr>
+                <tr><th></th><th></th><td colspan="2" class="orange">Price</td></tr>
+                <tr><th></th><th></th><td class="dark_blue">Rent/Buy</td><td class="dark_blue">Sell</td></tr>
+                <tr><td rowspan="3" class="orange">Location</td><td class="dark_blue">Downtown</td><td>3$</td><td>3$</td></tr>
+                <tr><td class="dark_blue">Center</td><td>3$</td><td>3$</td></tr></tr>
+                <tr><td class="dark_blue">Manhattan</td><td>3$</td><td>3$</td></tr></tr>
             </table>
         </div>
         <div class="contact_us">
-            <form action="">
-                    <select>
+            <h1>CONTACT US</h1>
+            <form action="" class="contact_form">
+                    <select class="select">
                         <option value="Mrs">Mrs.</option>
                         <option value="Ms">Ms.</option>
                     </select>
-                    <input type="text" placeholder="Your name">
-                    <input type="email" placeholder="Your email">
-                    <textarea rows="4" cols="50" placeholder="Your message">
+                    <input type="text" placeholder="Your name" class="input your_name">
+                    <input type="email" placeholder="Your email" class="input your_email">
+                    <textarea rows="4" cols="50" placeholder="Your message" class="input textarea">
                             
                     </textarea>
             </form>

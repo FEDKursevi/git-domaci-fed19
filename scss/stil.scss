@@ -1,0 +1,208 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+.mainNavigation{
+   
+
+    .avatarContainer{
+        float: left; // definisemo da je levo
+        width:25%;
+        height: 3em;
+        background-color:  #f75311;
+        padding-left: 1.5em;
+       
+       
+        h1{
+            float:right;
+            padding-right:59%;
+            padding-top: .7em;
+            font-weight: normal;
+            font-size: 1.2em;
+            
+            
+            a {
+                color: white;
+                text-decoration: none;
+                cursor: pointer;
+               
+
+                &:hover{
+                    text-decoration: underline;
+                }
+             }
+           
+        }
+        
+        img{
+            width: 15%;      
+        }   
+    }
+
+
+    ul{
+        list-style: none;
+        float: left;
+        background-color:#374249;
+        width: 75%;
+        height: 3em;
+        
+
+
+        li{
+            display: inline-block;
+            margin-left: 1.5em;
+            padding-right: 3em;
+            padding-top: 1.1em;
+            font-size: .9em;
+            
+            a{
+                text-decoration: none;
+                color: white;
+                
+
+                &:hover{
+                    background-color: #cfd1d3;
+                    padding: .5em;
+                }
+                
+            }
+        }
+    }
+
+}
+
+section{ // za svaki section
+    width: 100%;
+ }
+
+ .sec1{ // prvi u kom se nalazi text i slika
+    background-image: url('../slike/intro.jpg'); // ubacimo pozadinu iza, ali ce ona biti 100% width, samo sto ce visina biti samo koliko je i text
+    height: 37em; // ovako dobijemo visinu slike koju zelimo
+    margin-bottom: 1em; // napravimo dole razmak od slike do sledeceg texta
+    width: 100%;
+    background-size:cover; 
+
+    .naslovi{
+        width: 100%;
+        text-align: center; // smestimo ga na sredinu
+        padding-top: 30%; // podesimo da bude na sredini, tj spustimo ga od gore za 20%
+         
+
+        h1{
+            width: 70%;
+           margin: 0 auto;
+           font-size: 3em;
+           color: white;
+           font-weight: normal;
+           background-color: rgba(73, 61, 61, 0.5);
+   
+        }
+
+        h3{
+            width: 70%;
+            margin: 0 auto;
+            text-align: center;
+            color: white;
+            font-weight: normal;
+            background-color: rgba(73, 61, 61, 0.5);
+        }
+    }
+ }
+
+ .sec2{
+     width: 100%;
+     height:3em;
+     text-align: center;
+     padding-left: 56%;
+
+     a{
+        float: left;
+        display: inline-block;
+        border: 1px solid  #cfd1d3;
+        padding:0.5em 1em;
+        margin-right: 2em;
+        border-radius:22px; 
+        text-decoration: none;
+        color: #5d6c75;
+        font-size: .9em;
+        
+        
+     }
+ }
+
+ .sec3{
+    width: 100%;
+    height:35em;
+    background-color: #f3f7f9;
+    
+    .boxes {
+        width: 80%;
+        margin: 0 auto;
+       
+        
+
+    .box{
+        width: 20%;
+        position: relative;
+        padding-top:2em;
+       
+        display: inline-block;
+       
+        
+
+        .image {
+            display: inline-block;
+            width: 85%;
+            height: 17vw;
+            margin-left: 35%;
+            
+            
+           
+          }
+
+          .overlay {
+            position: absolute;
+            top: 32px;
+            left: 75px;
+            height: 50%;
+            width: 85%;
+            opacity: 0;
+            transition: .5s ease;
+            background-color: rgba(243, 247, 249, 50%);
+           
+          
+
+            &:hover{
+                opacity: 1;
+            }
+
+            
+
+            .text {
+                color: black;
+                font-size: 20px;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                -webkit-transform: translate(-50%, -50%);
+                -ms-transform: translate(-50%, -50%);
+                transform: translate(-50%, -50%);
+                text-align: center;
+              }
+            }
+
+    }
+}
+
+    
+ }
+
+
+
+
+
+ 

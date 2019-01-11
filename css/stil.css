@@ -1,0 +1,129 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif; }
+
+.mainNavigation .avatarContainer {
+  float: left;
+  width: 25%;
+  height: 3em;
+  background-color: #f75311;
+  padding-left: 1.5em; }
+  .mainNavigation .avatarContainer h1 {
+    float: right;
+    padding-right: 59%;
+    padding-top: .7em;
+    font-weight: normal;
+    font-size: 1.2em; }
+    .mainNavigation .avatarContainer h1 a {
+      color: white;
+      text-decoration: none;
+      cursor: pointer; }
+      .mainNavigation .avatarContainer h1 a:hover {
+        text-decoration: underline; }
+  .mainNavigation .avatarContainer img {
+    width: 15%; }
+.mainNavigation ul {
+  list-style: none;
+  float: left;
+  background-color: #374249;
+  width: 75%;
+  height: 3em; }
+  .mainNavigation ul li {
+    display: inline-block;
+    margin-left: 1.5em;
+    padding-right: 3em;
+    padding-top: 1.1em;
+    font-size: .9em; }
+    .mainNavigation ul li a {
+      text-decoration: none;
+      color: white; }
+      .mainNavigation ul li a:hover {
+        background-color: #cfd1d3;
+        padding: .5em; }
+
+section {
+  width: 100%; }
+
+.sec1 {
+  background-image: url("../slike/intro.jpg");
+  height: 37em;
+  margin-bottom: 1em;
+  width: 100%;
+  background-size: cover; }
+  .sec1 .naslovi {
+    width: 100%;
+    text-align: center;
+    padding-top: 30%; }
+    .sec1 .naslovi h1 {
+      width: 70%;
+      margin: 0 auto;
+      font-size: 3em;
+      color: white;
+      font-weight: normal;
+      background-color: rgba(73, 61, 61, 0.5); }
+    .sec1 .naslovi h3 {
+      width: 70%;
+      margin: 0 auto;
+      text-align: center;
+      color: white;
+      font-weight: normal;
+      background-color: rgba(73, 61, 61, 0.5); }
+
+.sec2 {
+  width: 100%;
+  height: 3em;
+  text-align: center;
+  padding-left: 56%; }
+  .sec2 a {
+    float: left;
+    display: inline-block;
+    border: 1px solid  #cfd1d3;
+    padding: 0.5em 1em;
+    margin-right: 2em;
+    border-radius: 22px;
+    text-decoration: none;
+    color: #5d6c75;
+    font-size: .9em; }
+
+.sec3 {
+  width: 100%;
+  height: 35em;
+  background-color: #f3f7f9; }
+  .sec3 .boxes {
+    width: 80%;
+    margin: 0 auto; }
+    .sec3 .boxes .box {
+      width: 20%;
+      position: relative;
+      padding-top: 2em;
+      display: inline-block; }
+      .sec3 .boxes .box .image {
+        display: inline-block;
+        width: 85%;
+        height: 17vw;
+        margin-left: 35%; }
+      .sec3 .boxes .box .overlay {
+        position: absolute;
+        top: 32px;
+        left: 75px;
+        height: 50%;
+        width: 85%;
+        opacity: 0;
+        transition: .5s ease;
+        background-color: rgba(243, 247, 249, 0.5); }
+        .sec3 .boxes .box .overlay:hover {
+          opacity: 1; }
+        .sec3 .boxes .box .overlay .text {
+          color: black;
+          font-size: 20px;
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          -webkit-transform: translate(-50%, -50%);
+          -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+          text-align: center; }
+
+/*# sourceMappingURL=stil.css.map */

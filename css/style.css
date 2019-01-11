@@ -47,6 +47,11 @@ nav {
     height: 100%;
     width: 85%;
     float: left; }
+    nav .navbar:before, nav .navbar:after {
+      content: "";
+      display: table; }
+    nav .navbar:after {
+      clear: both; }
     nav .navbar ul {
       float: left; }
     nav .navbar li {
@@ -56,24 +61,46 @@ nav {
     nav .navbar a:hover {
       text-decoration: underline; }
 
+@media (min-width: 798px) and (max-width: 1084px) {
+  nav .logo {
+    width: 25%; }
+  nav .navbar {
+    width: 75%; } }
+@media (min-width: 100px) and (max-width: 798px) {
+  nav .logo {
+    width: 100%; }
+  nav .navbar {
+    height: 330px;
+    width: 100%;
+    background: #374249;
+    text-align: center;
+    float: none;
+    padding-top: 30px; }
+    nav .navbar ul {
+      padding: 0;
+      float: none; }
+    nav .navbar li {
+      display: block;
+      padding: 25px 0; }
+    nav .navbar li + li {
+      padding-left: 0; } }
 .main {
   width: 100%;
-  height: 100%;
+  height: 550px;
+  background-image: url(../../slike/intro.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
   position: relative; }
-  .main img {
-    width: 100%;
-    height: auto;
-    position: relative; }
   .main .text-wrapper {
     text-align: center;
     color: #fff;
-    position: absolute;
     width: 70%;
     background: rgba(56, 56, 56, 0.445);
-    top: 50%;
+    position: absolute;
+    bottom: 15%;
     left: 50%;
-    transform: translate(-50%, -50%);
-    top: 65%; }
+    transform: translateX(-50%); }
     .main .text-wrapper h1 {
       font-size: 3vw;
       margin: 0;
@@ -82,28 +109,59 @@ nav {
       font-size: 1rem;
       font-weight: 300;
       margin: 0; }
-  .main .buttons {
-    height: 90px; }
-    .main .buttons a {
-      float: right;
-      padding: 15px;
-      margin: 18px;
-      border: 1px solid #797979;
-      border-radius: 50px;
-      color: #797979;
-      transition: ease-in-out 300ms; }
-      .main .buttons a:hover {
-        background: #cfd1d3;
-        color: #fff; }
-      .main .buttons a:first-child {
-        margin-right: 200px; }
 
+.buttons {
+  height: 90px; }
+  .buttons:before, .buttons:after {
+    content: "";
+    display: table; }
+  .buttons:after {
+    clear: both; }
+  .buttons a {
+    float: right;
+    padding: 15px;
+    margin: 18px;
+    border: 1px solid #797979;
+    border-radius: 50px;
+    color: #797979;
+    transition: ease-in-out 300ms; }
+    .buttons a:hover {
+      background: #cfd1d3;
+      color: #fff; }
+    .buttons a:first-child {
+      margin-right: 200px; }
+
+@media (min-width: 798px) and (max-width: 1084px) {
+  .main .text-wrapper {
+    bottom: 30%; }
+    .main .text-wrapper h1 {
+      font-size: 5vw; }
+    .main .text-wrapper h4 {
+      font-size: 4vw; } }
+@media (min-width: 100px) and (max-width: 798px) {
+  .main {
+    background-image: none;
+    background: #000;
+    z-index: -1; }
+    .main .text-wrapper {
+      background: none;
+      width: 100%; }
+      .main .text-wrapper h1 {
+        font-size: 8vw; }
+      .main .text-wrapper h4 {
+        font-size: 4vw; }
+
+  .buttons {
+    font-size: 2vw; }
+    .buttons a:first-child {
+      margin-right: 0; } }
 .galery {
   width: 100%;
-  height: 80vh; }
+  height: 1100px; }
   .galery .container {
     width: 70%;
     height: auto;
+    padding-top: 60px;
     margin: 0 auto; }
     .galery .container > div {
       width: 250px;
@@ -125,6 +183,21 @@ nav {
     padding: 10px;
     display: none; }
 
+@media (min-width: 100px) and (max-width: 798px) {
+  .galery {
+    width: 100%;
+    height: 2850px; }
+    .galery .container {
+      width: 95%; }
+      .galery .container > div {
+        width: 100%;
+        height: 400px;
+        margin: 30px 0;
+        display: block; }
+        .galery .container > div > div {
+          color: #000;
+          display: block;
+          padding-left: 40px; } }
 .pricing {
   text-align: center;
   height: 500px; }
@@ -135,6 +208,8 @@ nav {
     margin-bottom: 0; }
   .pricing h5 {
     font-weight: 300; }
+  .pricing a {
+    display: none; }
   .pricing table {
     text-align: center;
     border-collapse: collapse;
@@ -153,14 +228,25 @@ nav {
     .pricing table .none {
       border: none; }
 
+@media (min-width: 100px) and (max-width: 798px) {
+  .pricing {
+    font-size: 2rem; }
+    .pricing table {
+      display: none; }
+    .pricing h5 {
+      padding-bottom: 30px; }
+    .pricing a {
+      border: 1px solid #797979;
+      border-radius: 50px;
+      color: #797979;
+      transition: ease-in-out 300ms;
+      padding: 15px; }
+      .pricing a:hover {
+        background: #cfd1d3;
+        color: #fff; } }
 .contact {
   padding-bottom: 100px;
   text-align: center; }
-  .contact:before, .contact:after {
-    content: "";
-    display: table; }
-  .contact:after {
-    clear: both; }
   .contact h1 {
     color: #374249;
     padding: 10px 0;
@@ -168,11 +254,17 @@ nav {
     margin-bottom: 0;
     padding-bottom: 30px; }
   .contact .wrapper {
-    width: 65%;
+    width: 85%;
     height: 100%;
     margin: 0 auto; }
-    .contact .wrapper img {
-      width: 30%;
+    .contact .wrapper:before, .contact .wrapper:after {
+      content: "";
+      display: table; }
+    .contact .wrapper:after {
+      clear: both; }
+    .contact .wrapper iframe {
+      width: 35%;
+      height: 350px;
       float: left; }
     .contact .wrapper form {
       background: #f75311;
@@ -204,6 +296,34 @@ nav {
         height: 100px;
         margin-top: 20px; }
 
+@media (min-width: 798px) and (max-width: 1084px) {
+  .contact .wrapper .img {
+    width: 100%; }
+  .contact .wrapper iframe {
+    float: none;
+    width: 65%; }
+  .contact .wrapper form {
+    margin-top: 20px;
+    width: 100%;
+    float: none; } }
+@media (min-width: 100px) and (max-width: 798px) {
+  .contact .wrapper .img {
+    width: 100%; }
+  .contact .wrapper iframe {
+    float: none;
+    width: 65%; }
+  .contact .wrapper form {
+    margin-top: 20px;
+    width: 100%;
+    margin-top: 20px;
+    width: 100%;
+    float: none; }
+    .contact .wrapper form input[type="text"] {
+      width: 100%;
+      float: none; }
+    .contact .wrapper form select {
+      width: 100%;
+      margin-bottom: 20px; } }
 footer {
   height: 50px;
   background: #374249;
@@ -224,6 +344,7 @@ footer {
 body {
   font-family: "Roboto";
   color: #797979;
+  overflow-x: hidden;
   margin: 0;
   border: 0;
   padding: 0;
@@ -232,7 +353,7 @@ body {
     text-decoration: none; }
   body li {
     list-style: none; }
-  body section:nth-child(odd) {
+  body .galery, body .contact {
     background: rgba(169, 236, 253, 0.24); }
 
 /*# sourceMappingURL=style.css.map */

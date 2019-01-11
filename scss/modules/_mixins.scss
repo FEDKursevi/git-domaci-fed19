@@ -52,3 +52,14 @@
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
 }
+
+@mixin tablet {
+    @media (min-width: #{$tablet-width}) and (max-width: #{$desktop-width}){
+        @content;
+    }
+}
+@mixin mobile {
+    @media(min-width: #{$mobile-width}) and (max-width: #{$tablet-width}) {
+        @content;
+    }
+}

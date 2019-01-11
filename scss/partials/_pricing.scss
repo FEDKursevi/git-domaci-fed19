@@ -10,6 +10,9 @@
     h5 {
         font-weight: 300;
     }
+    a {
+        display: none;
+    }
     table {
         text-align: center;
         border-collapse: collapse;
@@ -33,4 +36,21 @@
             border: none;
         }
     }
+}
+
+@include mobile {
+    .pricing {
+        font-size: 2rem;
+        table {
+           display: none;
+        }
+        h5 {
+            padding-bottom: 30px;
+        }
+        a {
+            @include buttons();
+            padding: 15px;
+        }
+    }
+
 }

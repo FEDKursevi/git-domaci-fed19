@@ -14,13 +14,14 @@
 body {
     font-family: $main-font;
     color: $font-color;
+    overflow-x: hidden;
     @include reset() {
         li {
             list-style: none;
         }
     };
 
-    section:nth-child(odd) {
+    .galery, .contact {
         background:rgba(169, 236, 253, 0.24);
     }
 }

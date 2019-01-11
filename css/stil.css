@@ -126,4 +126,98 @@ section {
           transform: translate(-50%, -50%);
           text-align: center; }
 
+.sec4 {
+  width: 100%;
+  height: 35em; }
+  .sec4 .tables {
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+    padding-top: 4em; }
+    .sec4 .tables h1 {
+      color: #374249;
+      font-size: 2em;
+      padding-bottom: 1.5em;
+      text-transform: uppercase; }
+    .sec4 .tables h3 {
+      color: #5d6c75;
+      padding-bottom: 3em; }
+    .sec4 .tables .tab table {
+      width: 80%;
+      line-height: 2.3em;
+      margin: 0 auto;
+      border-collapse: collapse; }
+      .sec4 .tables .tab table .grey {
+        color: white;
+        background-color: #374249;
+        border: 1.7px solid #5d686e; }
+      .sec4 .tables .tab table .org {
+        color: white;
+        background-color: #f75311;
+        border: 1.7px solid #5d686e; }
+      .sec4 .tables .tab table .white {
+        color: #374249;
+        border: 1.7px solid #5d686e; }
+
+.sec5 {
+  width: 100%;
+  height: 28em;
+  background-color: #f3f7f9; }
+  .sec5 .contact {
+    width: 80%;
+    margin: 0 auto;
+    text-align: center; }
+    .sec5 .contact h1 {
+      color: #374249;
+      font-size: 2em;
+      padding-bottom: 1.5em;
+      text-transform: uppercase;
+      padding-top: 2em; }
+    .sec5 .contact p {
+      float: left;
+      width: 37%; }
+      .sec5 .contact p .place {
+        width: 100%;
+        height: 18vw; }
+    .sec5 .contact .contactForm {
+      background-color: #f75311;
+      width: 60%;
+      height: 15vw;
+      float: right;
+      padding: 20px;
+      display: block; }
+      .sec5 .contact .contactForm .gender {
+        width: 20%;
+        height: 40px;
+        float: left;
+        padding: 10px; }
+      .sec5 .contact .contactForm .contactInput1 {
+        width: 70%;
+        height: 40px;
+        float: right;
+        padding: 10px; }
+      .sec5 .contact .contactForm .contactInput {
+        width: 100%;
+        height: 40px;
+        margin-top: 20px;
+        padding: 10px; }
+      .sec5 .contact .contactForm .contact_message {
+        width: 100%;
+        height: 40px;
+        margin-top: 20px;
+        resize: none;
+        padding: 10px; }
+
+footer {
+  width: 100%;
+  height: 3em;
+  background-color: #374249;
+  color: white;
+  text-align: center;
+  padding: 1em;
+  font-size: .9em; }
+
+span {
+  color: #f75311; }
+
 /*# sourceMappingURL=stil.css.map */

@@ -9,7 +9,7 @@
    
 
     .avatarContainer{
-        float: left; // definisemo da je levo
+        float: left;
         width:25%;
         height: 3em;
         background-color:  #f75311;
@@ -75,21 +75,21 @@
 
 }
 
-section{ // za svaki section
+section{ 
     width: 100%;
  }
 
- .sec1{ // prvi u kom se nalazi text i slika
-    background-image: url('../slike/intro.jpg'); // ubacimo pozadinu iza, ali ce ona biti 100% width, samo sto ce visina biti samo koliko je i text
-    height: 37em; // ovako dobijemo visinu slike koju zelimo
-    margin-bottom: 1em; // napravimo dole razmak od slike do sledeceg texta
+ .sec1{ 
+    background-image: url('../slike/intro.jpg'); 
+    height: 37em; 
+    margin-bottom: 1em; 
     width: 100%;
     background-size:cover; 
 
     .naslovi{
         width: 100%;
-        text-align: center; // smestimo ga na sredinu
-        padding-top: 30%; // podesimo da bude na sredini, tj spustimo ga od gore za 20%
+        text-align: center; 
+        padding-top: 30%; 
          
 
         h1{
@@ -197,9 +197,155 @@ section{ // za svaki section
 
     }
 }
-
     
  }
+
+
+ .sec4{
+    width: 100%;
+    height:35em;
+    
+
+    .tables{
+        width: 80%;
+        margin: 0 auto;
+        text-align: center;
+        padding-top: 4em;
+
+        h1{
+            color: #374249;;
+            font-size: 2em;
+            padding-bottom: 1.5em;
+            text-transform: uppercase;
+        }
+
+        h3{
+            color: #5d6c75;
+            padding-bottom: 3em;
+        }
+
+        .tab{
+            
+            table{
+                width: 80%;
+                line-height: 2.3em;
+                margin: 0 auto;
+                border-collapse: collapse;
+               
+
+        
+                .grey{
+                    color: white;
+                    background-color: #374249;
+                    border:1.7px solid #5d686e;
+                    
+                }
+
+                .org{
+                    color: white;
+                    background-color: #f75311;
+                    border:1.7px solid #5d686e;    
+                }
+
+                .white{
+                    color:#374249;
+                    border:1.7px solid #5d686e; 
+                }
+                 
+                
+                }
+            }
+
+        }
+    }
+
+    .sec5{
+        width: 100%;
+        height:28em;
+        background-color: #f3f7f9;
+
+        .contact{
+            width: 80%;
+            margin:0 auto;
+            text-align: center;
+
+            h1{
+                color: #374249;;
+                font-size: 2em;
+                padding-bottom: 1.5em;
+                text-transform: uppercase;
+                padding-top:2em;
+            }
+
+            p{
+                float: left;
+                width: 37%;
+                
+                .place{
+                    width: 100%;
+                    height: 18vw;
+                }
+            }
+
+            .contactForm{
+                background-color: #f75311;
+                width: 60%;
+                height: 15vw;
+                float: right;
+                padding: 20px; 
+                display: block;
+
+                .gender{
+                    width: 20%;
+                    height: 40px;
+                    float: left;
+                    padding:10px;
+                }
+    
+                .contactInput1{
+                    width: 70%;
+                    height: 40px;
+                    float: right;
+                    padding:10px;
+                }
+
+                .contactInput{
+                    width: 100%;
+                    height: 40px;
+                    margin-top: 20px;
+                    padding:10px;
+                }
+
+                .contact_message{
+                    width: 100%;
+                    height: 40px;
+                    margin-top: 20px;
+                    resize: none;
+                    padding:10px;
+                }
+                
+            }
+        }
+    }
+
+
+    footer{
+        width: 100%;
+        height: 3em;
+        background-color: #374249;
+        color: white;
+        text-align: center;
+        padding: 1em;
+        font-size: .9em;
+
+       
+    }
+
+    span {
+        color: #f75311;
+    }
+ 
+    
 
 
 

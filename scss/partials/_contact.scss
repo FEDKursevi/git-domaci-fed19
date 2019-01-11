@@ -1,0 +1,53 @@
+@import "../modules/vars";
+@import "../modules/mixins";
+
+.contact {
+    padding-bottom: 100px;
+    text-align: center;
+    @include clear-fix();
+    h1 {
+        @include headings();
+        padding-bottom: 30px;
+    }
+    .wrapper {
+        width: 65%;
+        height: 100%;
+        @include margin-center();
+        img {
+            width: 30%;
+            float: left;
+        }
+    form {
+        background: $orange;
+        width: 60%;
+        float: right;
+        padding: 30px;
+        @include clear-fix();
+        select, input {
+            float: left;
+            display: block;
+            margin: 5px 0;
+            height: 30px;
+            padding: 0;
+        }
+        select {
+            width: 15%;
+        }
+        input[type="text"] {
+            width: 75%;
+            float: right;
+        }
+        input[type="email"] {
+            width: 100%;
+            margin-top: 20px;
+        }
+        textarea {
+            width: 100%;
+            float: left;
+            height: 100px;
+            margin-top: 20px;
+            
+        }
+    }
+    }
+}

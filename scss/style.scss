@@ -4,8 +4,12 @@
 @import "partials/main-section";
 @import "partials/galery";
 @import "partials/pricing";
+@import "partials/contact";
+@import "partials/footer";
 
-
+* {
+    @include borderbox();
+}
 
 body {
     font-family: $main-font;

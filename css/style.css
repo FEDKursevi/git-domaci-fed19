@@ -8,6 +8,10 @@
 @import url("https://fonts.googleapis.com/css?family=Roboto");
 @import url("https://fonts.googleapis.com/css?family=Roboto");
 @import url("https://fonts.googleapis.com/css?family=Roboto");
+@import url("https://fonts.googleapis.com/css?family=Roboto");
+@import url("https://fonts.googleapis.com/css?family=Roboto");
+@import url("https://fonts.googleapis.com/css?family=Roboto");
+@import url("https://fonts.googleapis.com/css?family=Roboto");
 nav {
   height: 50px;
   width: 100%;
@@ -148,6 +152,74 @@ nav {
       color: #374249; }
     .pricing table .none {
       border: none; }
+
+.contact {
+  padding-bottom: 100px;
+  text-align: center; }
+  .contact:before, .contact:after {
+    content: "";
+    display: table; }
+  .contact:after {
+    clear: both; }
+  .contact h1 {
+    color: #374249;
+    padding: 10px 0;
+    font-size: 2rem;
+    margin-bottom: 0;
+    padding-bottom: 30px; }
+  .contact .wrapper {
+    width: 65%;
+    height: 100%;
+    margin: 0 auto; }
+    .contact .wrapper img {
+      width: 30%;
+      float: left; }
+    .contact .wrapper form {
+      background: #f75311;
+      width: 60%;
+      float: right;
+      padding: 30px; }
+      .contact .wrapper form:before, .contact .wrapper form:after {
+        content: "";
+        display: table; }
+      .contact .wrapper form:after {
+        clear: both; }
+      .contact .wrapper form select, .contact .wrapper form input {
+        float: left;
+        display: block;
+        margin: 5px 0;
+        height: 30px;
+        padding: 0; }
+      .contact .wrapper form select {
+        width: 15%; }
+      .contact .wrapper form input[type="text"] {
+        width: 75%;
+        float: right; }
+      .contact .wrapper form input[type="email"] {
+        width: 100%;
+        margin-top: 20px; }
+      .contact .wrapper form textarea {
+        width: 100%;
+        float: left;
+        height: 100px;
+        margin-top: 20px; }
+
+footer {
+  height: 50px;
+  background: #374249;
+  text-align: center;
+  color: #fff; }
+  footer span {
+    display: inline-block;
+    margin-top: 15px; }
+  footer span + span {
+    color: #f75311; }
+
+* {
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; }
 
 body {
   font-family: "Roboto";

@@ -5,10 +5,7 @@
     text-align: center;
     height: 500px;
     h1 {
-        color: $bluehf;
-        padding: 10px 0;
-        font-size: 2rem;
-        margin-bottom: 0;
+        @include headings();
     }
     h5 {
         font-weight: 300;

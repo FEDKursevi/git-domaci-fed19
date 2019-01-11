@@ -39,3 +39,16 @@
     @content;
 }
 
+@mixin headings {
+    color: $bluehf;
+    padding: 10px 0;
+    font-size: 2rem;
+    margin-bottom: 0;
+}
+
+@mixin borderbox {
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}

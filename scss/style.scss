@@ -1,0 +1,340 @@
+@import 'vars';
+@import 'mixins';
+
+@include main;
+
+header {
+	width: 100%;
+	height: 5em;
+	color: #fff;
+
+	.location, nav {
+		padding: 1em 2em;
+	}
+
+	.location {
+		height: 100%;
+		width: 20%;
+		float: left;
+		background: $main_orange;
+		text-decoration: underline;
+
+		img {
+			height: 100%;
+			float: left;
+		}
+
+		span {
+			font-size: 1.5em;
+			float: left;
+			margin-top: 0.3em;
+    		text-decoration: underline;
+		}
+	}
+
+	nav {
+		float: right;
+		height: 100%;
+		width: 80%;
+		text-align: left;
+		background: $main_dark;
+
+		ul {
+			list-style: none;
+			padding-top: .8em;
+
+			li {
+				display: inline-block;
+				margin-right: 5em;
+				font-size: 1.2em;
+
+				a {
+					color: #fff;
+					vertical-align: middle;
+					text-decoration: none;
+
+					&:hover { text-decoration: underline; }
+				}
+			}
+		}
+	}
+}
+
+section {
+	width: 100%;
+	padding: 3em 15%;
+	@include clearfix;
+}
+
+.intro {
+	height: 50em;
+	background: url('../slike/intro.jpg');
+	background-size: cover;
+
+	h1, h2 {
+		color: #fff;
+		font-weight: normal;
+		background: rgba(55, 66, 73, 0.6);
+		text-align: center;
+	}
+
+	h1 {
+		margin-top: 40%;
+		font-size: 4em;
+	}
+}
+
+.button {
+	padding: 1em 2em;
+	border-radius: 60px;
+	color: $main_text_color;
+	border: 1px solid $grey_light;
+	margin: 0 1em;
+	cursor: pointer;
+
+	&:hover {
+		background: $grey_light;
+		color: #fff;
+	}
+}
+
+.filter {
+	text-align: right;
+}
+
+.rooms {
+	background: $section_grey;
+	a { color: #000; }
+}
+
+.column {
+	width: 20%;
+	height: 20em;
+	float: left;
+	margin: 1em;
+
+	.columnInfo {
+		display: none;
+		width: 100%;
+		height: 40%;
+		background: rgba(255, 255, 255, 0.7);
+		padding: 1em;
+
+		h1, h2 { font-weight: normal; }
+	}
+
+	&:hover .columnInfo { display: block; }
+
+	@for $i from 1 through 6 {
+		&.column#{$i} { 
+			background: url('../slike/#{$i}.jpg'); 
+			background-size: cover;	
+		}
+	}
+}
+
+.contact, .pricing {
+	h1 {
+		font-size: 2em;
+		color: $main_dark;
+		text-align: center;
+		text-transform: uppercase;
+		margin-bottom: 1.5em;
+	}
+}
+
+.pricing {
+	color: $main_text_color;
+	text-align: center;
+
+	.pricingTable {
+		width: 60%;
+		margin: 3em auto;
+		border-collapse: collapse;
+
+		th, td {
+			padding: .5em;
+		}
+
+		.orange {
+			background: $main_orange;
+			color: #fff;
+		}
+
+		.darkCol {
+			background: $main_dark;
+			color: #fff;
+			font-weight: bold;
+		}
+
+		thead {
+			.darkCol {
+				border-right: 1px solid $main_text_color;
+			}
+		}
+
+		tbody {
+			td {
+				border: 1px solid $main_text_color;
+			}
+		}
+	}
+
+	.pricingButton { display: none; }
+
+}
+
+.contact {
+	background: $section_grey;
+
+	.mapHolder {
+		float: left;
+		margin: 1em;
+		width: 30%;
+
+		iframe {
+			width: 100%;
+		}
+	}
+
+	form {
+		width: 60%;
+		margin: 1em;
+		float: right;
+		padding: 1em;
+		background: $main_orange;
+
+		.contactInput {
+			float: left;
+			padding: .5em;
+			color: $main_dark;
+			border: none;
+			margin: 1em;
+		}
+
+		select {
+			width: 20%;
+		}
+
+		.contactInput[type="text"] {
+			float: right;
+			width: 70%;
+		}
+
+		.contactInput[type="email"] {
+			width: 96%;
+		}
+
+		textarea.contactInput {
+			width: 96%;
+		}
+	}
+}
+
+footer { 
+	padding: 1em;
+	text-align: center;
+	width: 100%;
+	background: $main_dark;
+	color: #fff;
+
+	span { color: $main_orange; }
+}
+
+@media screen and (max-width: 1200px) {
+
+	.column {
+		width: 45%;
+	}
+
+	.pricing {
+		.pricingTable { width: 100%; }
+	}
+
+	.contact {
+
+		.mapHolder {
+			width: 50%;
+			float: none;
+			margin: 1em auto;
+		}
+
+		form {
+			width: 100%;
+		}
+	}
+
+}
+
+@media screen and (max-width: 670px) {
+
+	header {
+		.location {
+			width: 100%;
+		}
+
+		nav {
+			width: 100%;
+			height: auto;
+
+			ul {
+				li {
+					width: 100%;
+					text-align: center;
+					padding: 1em;
+				}
+			}
+		}
+	}
+
+	section {
+		padding: 3em 1em;
+	}
+
+	.intro {
+		background: #000;
+		height: auto;
+
+		h1, h2 {
+			background: none;
+		}
+	}
+
+	.column {
+		display: block;
+		margin: 1em auto;
+		width: 100%;
+
+		.columnInfo {
+			display: block;
+		}
+	}
+
+	.pricing {
+
+		.pricingTable { display: none; }
+		.pricingButton { 
+			display: inline-block;
+    		margin-top: 2em; 
+		}
+
+	}
+
+	.contact {
+
+		.mapHolder {
+			width: 80%;
+		}
+
+		form {
+			margin: 1em 0;
+
+			.contactInput, .contactInput[type="text"] {
+				width: 96%;
+				float: none;
+			}
+		}
+
+	}
+
+}

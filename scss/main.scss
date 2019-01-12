@@ -1,0 +1,53 @@
+@import 'mixins';
+@import 'vars';
+
+@include main;
+
+main, section{
+    padding: 2em 10em;
+}
+.gallery, .contact{
+    background-color: $bkg;
+}
+h2{
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-bottom: 2rem;
+    text-align: center;
+    color: $blue;
+}
+header{
+    height: 4rem;
+    background-color: $blue;
+    .logo{
+        height: 100%;
+        width: 18rem;
+        background-color: $orange;
+        float: left;
+        @include flexCenter{
+            flex-direction: row;
+            justify-content: left;
+        }
+        img{
+            width: 3rem;
+            margin: .5rem;
+        }
+        a{
+            color: #fff;
+        }
+
+    }
+    nav{
+        ul{
+            height: 100%;
+            li{
+                display: inline-block;
+                padding: 1.3rem;
+                a{
+                    color: #fff;
+                    text-decoration: none;
+                }
+            }
+        }
+    }
+}

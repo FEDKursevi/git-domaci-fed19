@@ -5,9 +5,119 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>HomeExchange</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="css/main.css" />
+    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
 </head>
 <body>
-    
+    <header>
+        <div class="logo">
+            <img src="slike/location.png">
+            <a href="#">New York</a>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#">Rent</a></li>
+                <li><a href="#">Buy</a></li>
+                <li><a href="#">Sell</a></li>
+                <li><a href="#">Messages</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div>
+            <h1>Welcome to HomeExchange</h1>
+            <p>Your fastest way to find or sell home online</p>
+        </div>
+    </main>
+    <section class="sortBtn">
+        <a href="#">$1200 - $4000</a>
+        <a href="#">1+Bedroom</a>
+        <a href="#">Garage</a>
+    </section>
+    <section class="gallery">
+        <div class="pic">
+            <div class="text">
+                <p>Loft Apartment <br>$3000</p>
+            </div>
+            <img src="slike/1.jpg">
+        </div>
+        <div class="pic">
+            <div class="text">
+                <p>Loft Apartment <br>$4000</p>
+            </div>
+            <img src="slike/2.jpg">
+        </div>
+        <div class="pic">
+            <div class="text">
+                <p>Loft Apartment <br>$2800</p>
+            </div>
+            <img src="slike/3.jpg">
+        </div>
+        <div class="pic">
+            <div class="text">
+                <p>Apartment <br>$3100</p>
+            </div>
+            <img src="slike/4.jpg">
+        </div>
+        <div class="pic">
+            <div class="text">
+                <p>Apartment <br>$2000</p>
+            </div>
+            <img src="slike/5.jpg">
+        </div>
+        <div class="pic">
+            <div class="text">
+                <p>Apartment <br>$3300</p>
+            </div>
+            <img src="slike/6.jpg">
+        </div>
+        <div class="pic">
+            <div class="text">
+                <p>Loft Apartment <br>$3000</p>
+            </div>
+            <img src="slike/1.jpg">
+        </div>
+    </section>
+    <section class="pricing">
+        <h2>Pricing</h2>
+        <p>Our services prices in New York</p>
+        <table>
+            <tr>
+                <td class="none"></td><td class="none"></td><th rowspan="2">Price</th>
+            </tr>
+            <tr>
+                <td class="none"></td><td class="none"></td><td class="blue">Rent/Buy</td><td class="blue">Sell</td>
+            </tr>
+            <tr>
+                <th colspan="3">Location</th><td class="blue">Downtown</td><td>3$</td><td>3$</td>
+            </tr>
+            <tr>
+                <td class="blue">Center</td><td>3$</td><td>3$</td>
+            </tr>
+            <tr>
+                <td class="blue">Manhatten</td><td>3$</td><td>3$</td>
+            </tr>
+        </table>
+    </section>
+    <section class="contact">
+        <h2>Contact us</h2>
+        <div class="map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d11232.074734038006!2d19.81551925!3d45.267633100000005!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2srs!4v1547290047016" width="400" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
+        </div>
+        <form method="post">
+            <select name="gender">
+                <option value="mrs" selected>Mrs</option>
+                <option value="miss">Miss</option>
+                <option value="mr">Mr</option>
+            </select>
+            <input type="text" name="name" placeholder="Your name">
+            <input type="email" name="email" placeholder="Your email">
+            <textarea name="message"cols="30" rows="3" placeholder="Your message"></textarea>
+        </form>
+    </section>
+    <footer>
+        Copyright <i class="far fa-copyright"></i> 2019 <span>HomeExchange</span>
+    </footer>
 </body>
 </html>

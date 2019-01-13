@@ -46,7 +46,308 @@ header{
                 a{
                     color: #fff;
                     text-decoration: none;
+                    @include hover{
+                        text-decoration: underline;
+                    }
                 }
+            }
+        }
+    }
+}
+main{
+    background-image: url('../slike/intro.jpg');
+    @include bkgSize;
+    height: calc(100vh - 4rem);
+    @include flexCenter;
+    div{
+        height: 5rem;
+        margin-top: 25rem;
+        width: 100%;
+        background-color: rgba($color: $blue, $alpha: 0.5);
+        @include flexCenter{
+            flex-direction: column;
+        }
+        h1{
+            color: #fff;
+            font-size: 3rem;
+            font-weight: bolder;
+        }
+        p{
+            color: #fff;
+        }
+    }
+}
+.sortBtn{
+    @include clearfix;
+    .btns{
+        float: right;
+        a{
+            border: 1px solid $blue;
+            border-radius: 3rem;
+            padding: 1rem 2rem;
+            margin: 2rem 1rem;
+            text-decoration: none;
+            color: darken($color: $textColorMain, $amount: 20);
+            @include hover{
+                color: #fff;
+                background-color: $hoverColor;
+            }
+        }
+    }
+}
+.gallery{
+    @include flexCenter{
+        flex-wrap: wrap;
+        justify-content: flex-start;
+    }
+    .pic{
+        margin: 2rem;
+        position: relative;
+        // &:hover .text{
+        //     display: block;
+        // }
+        @include hover{
+            & .text{
+                display: block;
+            }
+        }
+        &:last-child img{
+            height: 400px;
+        }
+        .text{
+            display: none;
+            position: absolute;
+            height: 8rem;
+            width: 100%;
+            background-color: rgba($color: $blue, $alpha: 0.4);
+            padding: 10px;
+            span, p{
+                color: #fff;
+            }
+        }
+        img{
+            height: auto;
+            width: 100%;
+        }
+    }
+}
+.pricing{
+    p{
+        text-align: center;
+        margin-bottom: 5rem;
+    }
+    a{
+        display: none;
+    }
+    table{
+        border-collapse: collapse;
+        width: 50%;
+        margin: 0 auto;
+        .none{
+            border: none;
+        }
+        th{
+            background-color: $orange;
+            padding: 1rem 4rem;
+            color: #fff;
+        }
+        .blue{
+            background-color: $blue;
+            color: #fff;
+            padding: 1rem 4rem;
+            border: 1px solid lighten($color: $blue, $amount: 20);
+        }
+        td{
+            border: 1px solid $blue;
+            text-align: center;
+        }
+    }
+}
+.contact{
+    @include clearfix;
+    .map{
+        float: left;
+    }
+    form{
+        float: right;
+        background-color: $orange;
+        padding: 1.5rem;
+        @include flexCenter{
+            flex-direction: row;
+            flex-wrap: wrap;
+        };
+        &>*{
+            border: none;
+            padding: .2rem;
+            &::placeholder{
+                color: lighten($color: $textColorMain, $amount: 10);
+            }
+        }
+        select{
+            margin-right: 1rem;
+            flex-basis: 15%;
+            margin-bottom: 1rem;
+        }
+        input[name="name"]{
+            flex-basis: 82%;
+            margin-bottom: 1rem;
+        }
+        input[name="email"]{
+            flex-basis: 100%;
+            margin-bottom: 1rem;
+        }
+        textarea{
+            flex-basis: 100%;
+        }
+    }
+}
+footer{
+    background-color: $blue;
+    text-align: center;
+    padding: .5rem;
+    color: #fff;
+    span{
+        color: $orange;
+    }
+}
+@include tablet{
+    main, section{
+        padding: 2em 7em;
+    }
+    main{
+        div{
+            margin-top: 0;
+            padding: 0 2rem;
+            height: 8rem;
+            h1{
+                text-align: center;
+            }
+        }
+    }
+    .gallery{
+        padding: 1rem;
+        justify-content: center;
+        .pics{
+            width: 80%;
+            img{
+                width: 80%;
+            }
+        }
+    }
+    .pricing{
+        padding: 1rem;
+        a{
+            display: none;
+        }
+        table{
+            th, td, .blue{
+                padding: 1rem 3rem;
+            }
+        }
+    }
+    .contact{
+        .map, form{
+            float: none;
+            text-align: center;
+            margin: 1rem 0;
+        }
+        form{
+            select{
+                margin-right: 1.2rem;
+                flex-basis: 20%
+            }
+            input[name="name"]{
+                flex-basis: 76%;
+            }
+        }
+    }
+}
+@include mobile{
+    main, section{
+        padding: 1rem;
+    }
+    header{
+        height: auto;
+        .logo{
+            float: none;
+            width: 100%;
+        }
+        nav{
+            background-color: $blue;
+            ul{
+                li{
+                    display: block;
+                    text-align: center;
+                }
+            }
+        }
+    }
+    main{
+        background-image: none;
+        height: auto;
+        background-color: black;
+        padding: 1rem;
+        div{
+            margin: 1rem;
+            text-align: center;
+            background-color: #000;
+        }
+    }
+    .pricing{
+        table{
+            display: none;
+        }
+    }
+    .sortBtn{
+        .btns{
+            float: none;
+            @include flexCenter{
+                flex-direction: row;
+            }
+            a{
+                padding: .5rem 1rem;
+                margin: 1rem .5rem;
+            }
+        }
+    }
+    .gallery{
+        justify-content: center;
+        .pic{
+            .text{
+                display: block;
+            }
+        }
+    }
+    .pricing{
+        @include flexCenter{
+            flex-direction: column;
+        }
+        p{
+            margin-bottom: 0;
+        }
+        a{
+            display: inline-block;
+            border: 1px solid $blue;
+            border-radius: 3rem;
+            padding: 1rem 2rem;
+            margin: 2rem 1rem;
+            text-decoration: none;
+            color: darken($color: $textColorMain, $amount: 20);
+            @include hover{
+                color: #fff;
+                background-color: $hoverColor;
+            }
+        }
+    }
+    .contact{
+        @include flexCenter{
+            flex-direction: column;
+        }
+        form{
+            margin-top: 1rem;
+            select, input[name="name"]{
+                margin-right: 0;
+                flex-basis: 100%;
             }
         }
     }

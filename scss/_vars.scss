@@ -1,8 +1,16 @@
-$fontMain: 'Raleway', sans-serif;
+//Fonts
+    $fontMain: 'Raleway', sans-serif;
 
-$textColorMain: #797979;
-$orange: #f75311;
-$blue: #374249;
-$headings: #374849;
-$hoverColor: #cfd1d3;
-$bkg: #d3d7d9;
+//Colors
+    $textColorMain: #797979;
+
+    $orange: #f75311;
+    $blue: #374249;
+    $headings: #374849;
+    $hoverColor: #cfd1d3;
+    $bkg: #d3d7d9;
+
+//Responsive
+    $desktopWidth: 1200px;
+    $tabletWidth: 780px;
+    $mobileWidth: 480px;
